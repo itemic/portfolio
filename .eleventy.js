@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 
@@ -6,7 +7,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+	return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
   return {
 	passthroughFileCopy: true,
 	dir: {

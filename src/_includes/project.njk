@@ -6,8 +6,24 @@
 
   <!-- Grab the content from the page data, dump it here, and mark it as safe -->
   <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+  
+  <div class="project-wrapper">
+  <a href="/projects" class="wayfinding project-title">←</a> <span class="wayfinding project-title">{{ title }}</span>
+  <div class="project-links">
+  
+  
+  {% if site_url %} 
+  <a href="{{ site_url }}" class="p-link"> Website →</a> {% endif %} 
+  
+  {% if repo_url %} <a href="{{ repo_url }}" class="p-link"> GitHub →</a> {% endif %}
+  
+  {% if appstore_url %} <a class="p-link" href="{{ appstore_url }}"> Download → </a> {% endif %}
+  
+  </div>
+  
   <div class="project-content">
   {{ content | safe }}
+  </div>
   </div>
 </body>
 </html>

@@ -1,12 +1,14 @@
 ---
 layout: project.njk
-title: Liverail HSR
+title: LiveRail HSR
 blurb: A timetable app for the Taiwan HSR
 img_src: railtimehsr.webp 
 tags: projects
+site_url: https://liverail.terrankroft.com/
+repo_url: https://github.com/itemic/LiveRail
+appstore_url: https://apps.apple.com/app/live-rail-for-hsr/id1550589269
+colour: FFA726
 ---
-
-[Mini-site](https://liverail.terrankroft.com/) | [GitHub](https://github.com/itemic/LiveRail) | [App Store](https://apps.apple.com/app/live-rail-for-hsr/id1550589269)
 
 ## Overview
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include "head.njk" %}
+<body>
+{% include "nav.njk" %}
+
+  <!-- Grab the content from the page data, dump it here, and mark it as safe -->
+  <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+  
+  <div class="project-wrapper">
+  <a href="/blog/posts" class="wayfinding project-title">←</a> <span class="wayfinding project-title">{{ title }}</span>
+  
+  <div class="project-links"><span class="wayfinding">{{ date | postDate }}</span></div>
+  
+  <div class="project-content">
+  {{ content | safe }}
+  </div>
+  </div>
+</body>
+</html>
+
