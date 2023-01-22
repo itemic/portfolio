@@ -5,32 +5,38 @@ eleventyNavigation:
   key: projects
   order: 1
 ---
+<div class="content">
 
+<div class="banner">
+<h3><span class="wayfinding">Projects</span> that I worked on.</h3>
+</div>
 
-
-<h1>projects</h1>
-<ul>
+<div class="container">
+{# Container #}
 {% for post in collections.projects %}
-<li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+
+<div class="project-box">
+<a href={{ post.url }}>
+{%- if post.data.img_src %}
+<img src="/img/{{ post.data.img_src }}"/>
+{%- else %}
+<img />
+{% endif %}
+<div class="project-name">
+<div class="project-title">{{ post.data.title }} →</div>
+<div class="project-subtitle">{{ post.data.blurb }}</div>
+</div>
+</a>
+</div>
+
+
+
 {% endfor %}
+
+
+</div>
+
+</div>
+<ul>
+
 </ul>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mi nec lectus convallis maximus. Ut eleifend, arcu eu congue volutpat, leo nulla dictum nisi, auctor venenatis elit libero eget enim. Curabitur aliquam, ante eget mollis ornare, nibh tortor viverra tellus, et porta nisi purus quis ligula. Nulla varius lectus non dictum ornare. Proin vitae massa sit amet felis ornare dapibus interdum non risus. Quisque aliquam erat ac aliquet pharetra. Nullam egestas tincidunt fringilla. Pellentesque suscipit neque eget mi facilisis molestie. Maecenas consectetur aliquam accumsan. Suspendisse porttitor dolor id diam tempus, nec consectetur ligula aliquet. Nullam euismod, ipsum quis consequat mattis, est velit venenatis risus, id molestie mi arcu nec mauris. In elementum justo sed magna mollis, eu vestibulum dui ornare. Praesent vestibulum augue ac ligula dictum vehicula. Nunc interdum nibh in tortor porta, at lacinia magna consequat. Duis posuere nunc non libero condimentum, non pellentesque dui mollis.
-
-Suspendisse ut vestibulum nibh. Quisque sodales ligula lacinia quam viverra, id accumsan arcu auctor. Praesent commodo luctus dui, ut aliquet nunc finibus sed. Fusce cursus, nulla non interdum lobortis, elit dolor blandit ex, at malesuada eros diam vel lorem. In quis arcu rhoncus, dictum elit vitae, tempus elit. Nulla varius leo facilisis varius ultrices. Morbi ullamcorper tincidunt urna, vitae consectetur augue hendrerit vitae. Maecenas at nunc ultrices, mattis nulla ac, suscipit ligula. Morbi interdum nisl et faucibus imperdiet.
-
-Pellentesque consectetur a libero a sollicitudin. Vivamus elementum diam in nibh commodo, quis venenatis neque laoreet. In justo risus, facilisis ut tincidunt in, vestibulum a mauris. Etiam dictum gravida mauris, dictum lacinia sem pulvinar at. Mauris cursus, tellus at varius laoreet, odio libero hendrerit lectus, ac semper velit est in ipsum. Nunc eu turpis lacus. Proin semper arcu placerat enim ultrices, et sodales neque dictum. Fusce maximus dolor condimentum, ornare arcu in, vulputate purus. Mauris tristique pretium augue in molestie. Integer tincidunt non odio non consequat. Donec iaculis eros quis velit pellentesque, sit amet feugiat dolor auctor. Praesent suscipit sit amet nulla sed tincidunt. Duis semper facilisis justo, nec tincidunt libero rutrum laoreet. Pellentesque finibus nibh non libero pretium auctor. Donec et condimentum magna. Mauris mollis purus ac venenatis aliquam.
-
-Ut placerat, erat et tincidunt tempor, elit arcu aliquam magna, mollis vulputate enim metus et lacus. Nullam hendrerit lorem vitae tortor facilisis, in porttitor massa feugiat. Ut cursus eros sed scelerisque ultricies. In vel urna aliquam, dignissim magna sed, consectetur dolor. Suspendisse venenatis rhoncus turpis vitae pulvinar. Phasellus non leo elit. Phasellus sagittis efficitur velit tristique consectetur. Pellentesque consequat nisi turpis, ut euismod risus sodales vitae. Nullam imperdiet euismod odio, at ultrices augue porttitor sed.
-
-Suspendisse pulvinar viverra est, vitae posuere nulla vehicula quis. Proin neque mauris, mollis eu luctus eu, porttitor non odio. Nunc posuere arcu vel felis porta lacinia. Donec at maximus massa. Integer in rutrum tellus, a malesuada mauris. Sed ultricies diam eget sem suscipit condimentum. Donec molestie ex sit amet erat pretium, in vehicula justo sagittis.
-
-Donec pulvinar ultricies libero quis blandit. Nulla facilisi. Etiam pulvinar enim erat, vel sagittis orci aliquet vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean vitae elit efficitur, fermentum nunc sed, feugiat libero. Donec a faucibus eros. Nullam elit est, fringilla at bibendum ac, malesuada sed metus.
-
-Pellentesque ut blandit velit. Donec ultrices porttitor lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse posuere volutpat elementum. Etiam suscipit dignissim pellentesque. Proin scelerisque suscipit nibh, quis tincidunt erat sagittis sed. Integer neque quam, malesuada at risus eu, malesuada feugiat eros. Nullam sapien metus, vehicula sed mi non, dictum gravida justo. Maecenas ac euismod mauris, non faucibus ipsum. In fermentum suscipit pulvinar. Donec nec laoreet nulla. Cras ligula risus, sollicitudin sit amet pretium sit amet, tincidunt eu sapien. Nam risus leo, ullamcorper sed ligula ac, malesuada placerat dui.
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur iaculis pharetra ligula. Pellentesque ornare vestibulum lorem a viverra. In feugiat augue nec rutrum sollicitudin. Nam luctus nunc libero, non blandit arcu tristique ac. Proin at faucibus lectus, eget varius quam. Maecenas finibus justo felis, vel maximus lectus maximus in. Nam porta leo id risus luctus feugiat. Morbi ac nibh mollis, rutrum nisl vitae, consectetur massa. Nunc tincidunt, odio in luctus tempor, nibh sem viverra risus, sed venenatis eros ante vel purus. Nunc nec magna commodo, finibus sem eget, congue metus. Vestibulum est nisl, gravida nec placerat quis, dignissim sed arcu. Nam venenatis erat metus, sed pellentesque nunc sollicitudin ac. Suspendisse potenti.
-
-Suspendisse gravida tortor eu ultrices laoreet. Vestibulum nisl nibh, vehicula vel sagittis in, mollis nec erat. Ut eu sollicitudin tellus. Proin erat massa, efficitur eu justo sit amet, blandit volutpat purus. Etiam congue nunc eget leo aliquet, interdum lacinia libero pharetra. Aliquam ac auctor eros. Sed neque nibh, varius sed mi in, molestie congue enim. Sed vehicula ipsum quis venenatis faucibus. Mauris viverra urna quis dolor dignissim cursus.
-
-Morbi non ante vulputate, congue elit eu, mollis lorem. Praesent commodo felis justo, nec feugiat nisl aliquam eu. Morbi a sodales nibh. Morbi tincidunt rhoncus enim, et fringilla eros efficitur eget. Aliquam sodales placerat blandit. Sed sodales magna ultricies sagittis accumsan. Phasellus sit amet convallis magna, id aliquam massa. Integer lacinia leo ut cursus posuere. Integer congue scelerisque felis ut mollis. Integer ac augue porta, fermentum nibh ac, condimentum justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.

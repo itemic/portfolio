@@ -4,6 +4,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function(eleventyConfig) {
   // Set custom directories for input, output, includes, and data
   eleventyConfig.addPassthroughCopy("src/style.css");
+  eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   return {
