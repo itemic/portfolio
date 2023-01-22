@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: first page
+---
+
+brucer
+<h1>bruce</h1>
+<p>site</p>
+<nav>
+<a href="/">Home</a>
+<ul>
+{% for post in collections.blog %}
+<li><a href="{{ post.url }}">B{{ post.data.title }}</li>
+{% endfor %}
+</ul>
