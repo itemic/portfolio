@@ -20,4 +20,10 @@ This post will attempt to revive my "sign collection" — and we begin with some
 
 The Naha Monorail only has one line and the entirety of Okinawa prefecture only has one rail-based public transport system. This made it challenging for me to get around, as buses weren't all that frequent either.
 
+![Naha Monorail platform passenger info display](/img/okinawa-signs/yui-platform.webp)
+*Naha Monorail platform passenger info display*
+
+![Naha Monorail platform sign](/img/okinawa-signs/yui-stn.webp)
+*Naha Monorail platform sign*
+
 And that marks the end of the first post on my new website — in my opinion much more exciting than a "Hello, world!" or "Just setting up my blog". Here's hoping this design stays up long enough and I find myself adding more content (#contentcreator!).
