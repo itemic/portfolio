@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-
+const Image = require("@11ty/eleventy-img")
 
 module.exports = function(eleventyConfig) {
   // Set custom directories for input, output, includes, and data
