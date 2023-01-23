@@ -16,7 +16,8 @@ body {
 
 .image-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(max(250px,20vw), 1fr));
+	/* grid-template-columns: repeat(auto-fill, minmax(max(200px,25vw))); */
+	grid-template-columns: repeat(auto-fill, max(350px, 19.5vw));
 	grid-gap: 0rem;
 	grid-auto-flow: dense;
 	align-items: left;
@@ -25,19 +26,22 @@ body {
 }
 
 .image-elem img {
-	/* width: minmax(max(300px,25vw), 1fr)); */
+	/* width: minmax(max(200px,25vw), 1fr)); */
+	width: max(350px, 19.5vw);
 	/* height: minmax(max(300px,25vw), 1fr 1fr)); */
 	object-fit: cover;
 	align-items: center;
-	height: max(250px, 20vw);
-	/* width: max(300px, 25vh); */
+	/* height: 1fr; */
+	/* height: repeat(auto-fill, max(200px, 25vw)); */
+	height: 19.5vw;
+	/* width: max(200px, 25vh); */
 	margin: 0px;
 	display: flex;
 	/* aspect-ratio: 1/1 */
 }
 
 img {
-	aspect-ratio: 1 / 1;
+	/* aspect-ratio: 1 / 1; */
 }
 
 .image-gallery > .image-elem {
