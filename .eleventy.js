@@ -5,6 +5,7 @@ const Image = require("@11ty/eleventy-img")
 module.exports = function(eleventyConfig) {
   // Set custom directories for input, output, includes, and data
   eleventyConfig.addPassthroughCopy("src/style.css");
+  eleventyConfig.addPassthroughCopy("src/gallery.css");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addFilter("postDate", (dateObj) => {

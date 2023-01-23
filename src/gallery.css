@@ -1,0 +1,75 @@
+.gallery-container {
+	margin: 0;
+	top: 30px;
+	left: 40px;
+	justify-content: left;
+	align-content: left;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+body {
+	padding: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.image-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 20vw);
+	grid-gap: 0rem;
+	grid-auto-flow: dense;
+	align-items: left;
+	justify-content: left;
+	margin-left: 0px;
+}
+
+.image-elem img {
+	width: 20vw;
+	object-fit: cover;
+	align-items: center;
+	height: 20vw;
+	margin: 0px;
+	display: flex;
+	/* padding-top: 1rem; */
+}
+
+.image-gallery > .image-elem {
+  /* ... */
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  /* transform: scale(0.3); */
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay .wayfinding {
+	opacity: 0;
+	transition: all 0.2s 0.1s ease-in-out;
+	font-size: 2rem;
+	color: white;
+	vertical-align: bottom;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.image-elem:hover .wayfinding {
+	opacity: 1
+}
+
+.image-elem:hover .overlay {
+  /* transform: scale(1); */
+  background: rgba(255, 255, 255, 0.0);
+}
