@@ -16,7 +16,7 @@ body {
 
 .image-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, 20vw);
+	grid-template-columns: repeat(auto-fill, minmax(max(250px,20vw), 1fr));
 	grid-gap: 0rem;
 	grid-auto-flow: dense;
 	align-items: left;
@@ -25,13 +25,19 @@ body {
 }
 
 .image-elem img {
-	width: 20vw;
+	/* width: minmax(max(300px,25vw), 1fr)); */
+	/* height: minmax(max(300px,25vw), 1fr 1fr)); */
 	object-fit: cover;
 	align-items: center;
-	height: 20vw;
+	height: max(250px, 20vw);
+	/* width: max(300px, 25vh); */
 	margin: 0px;
 	display: flex;
-	/* padding-top: 1rem; */
+	/* aspect-ratio: 1/1 */
+}
+
+img {
+	aspect-ratio: 1 / 1;
 }
 
 .image-gallery > .image-elem {
@@ -44,7 +50,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0);
   top: 0;
   left: 0;
   /* transform: scale(0.3); */
@@ -59,7 +65,7 @@ body {
 .overlay .wayfinding {
 	opacity: 0;
 	transition: all 0.2s 0.1s ease-in-out;
-	font-size: 2rem;
+	font-size: 1rem;
 	color: white;
 	vertical-align: bottom;
 	background: rgba(255, 255, 255, 0.5);
@@ -71,5 +77,5 @@ body {
 
 .image-elem:hover .overlay {
   /* transform: scale(1); */
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(255, 255, 255, 0.5);
 }
