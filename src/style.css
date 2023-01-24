@@ -228,3 +228,15 @@ nav > a {
 	overflow-x: auto
 	
 }
+
+.worldmap {
+	fill: #d4dff1;
+	stroke-width: 0.5;
+	stroke: #416bae;
+}
+
+/* Not sure why some are classes and others are by IDs so */
+/* Missing: HK, SG */
+.Zambia, .South-Africa, .Morocco, .Kenya, .Egypt, .United-States, .Canada, .Uzbekistan, .United-Arab-Emirates, .Turkey, .Thailand, .Taiwan, .South-Korea, .Singapore, .Qatar, .Philippines, .Oman, .Nepal, .Myanmar, .Mongolia, .Malaysia, .Laos, .Kyrgyzstan, .Kazakhstan, .Jordan, .Japan, .Indonesia, .India, .China, .Bahrain, .New-Zealand, .Australia, .United-Kingdom, .Spain, .Netherlands, .Moldova, .Macedonia, .France, .Czech-Republic, .Croatia, .Bulgaria, .Belgium, .Azerbaijan, .Austria {
+	fill: #416bae;
+}
