@@ -2,7 +2,7 @@
 layout: project.njk
 title: Dice Simulator
 blurb: A diceroll simulator
-img_src: railtimehsr.webp 
+img_src: dice.webp 
 tags: projects
 colour: FFA726
 ---
